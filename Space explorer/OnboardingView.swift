@@ -34,14 +34,14 @@ struct OnboardingView: View {
             Text(data.primaryText)
                 .font(.title2)
                 .bold()
-                .foregroundColor(Color(red: 41 / 255, green: 52 / 255, blue: 73 / 255))
+                .foregroundColor(Color("ColorDark"))
 
             Text(data.secondaryText)
                 .font(.headline)
                 .multilineTextAlignment(.center)
                 .frame(maxWidth: 250)
-                .foregroundColor(Color(red: 237 / 255, green: 203 / 255, blue: 150 / 255))
-                .shadow(color: Color.black.opacity(0.1), radius: 1, x: 2, y: 2)
+                .foregroundColor(Color("ColorLightShadow"))
+               // .shadow(color: Color.black.opacity(0.1), radius: 1, x: 2, y: 2)
 
             Spacer()
 
@@ -59,10 +59,10 @@ struct OnboardingView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(
-                                Color(
-                                    red: 255 / 255,
-                                    green: 115 / 255,
-                                    blue: 115 / 255
+                                Color("ColorDark"
+//                                    red: 255 / 255,
+//                                    green: 115 / 255,
+//                                    blue: 115 / 255
                                 )
                             )
                     )
