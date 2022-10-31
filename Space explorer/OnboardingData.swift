@@ -13,7 +13,7 @@ struct OnboardingData: Hashable, Identifiable {
     let objectImage: String
     let primaryText: String
     let secondaryText: String
-
+    
     static let list: [OnboardingData] = [
         OnboardingData(id: 0, backgroundImage: "path", objectImage: "productivity", primaryText: "Are you looking for something space?", secondaryText: "If you are curious about space, it's definitely for you"),
         OnboardingData(id: 1, backgroundImage: "path", objectImage: "productivity", primaryText: "Get daily new space picture!", secondaryText: "Only couple minutes per dey and you will get many information and space pictures"),

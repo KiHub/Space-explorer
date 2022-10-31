@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 struct OnboardingView: View {
+    
+//    @Environment(\.presentationMode) var presentation
+    @ObservedObject var global = Global()
     var data: OnboardingData
-  //  @State private var showMain: Bool = false
     @State private var isAnimating: Bool = false
-   // @AppStorage("onboarded") var onboarded: Bool = false
     var body: some View {
         VStack(spacing: 20) {
             ZStack {
@@ -44,11 +46,11 @@ struct OnboardingView: View {
             Spacer()
 
             Button(action: {
-                // Add action for button
-            //    onboarded = true
-           //     showMain.toggle()
+ 
+                global.onboardingOn = false
+               // self.presentation.wrappedValue.dismiss()
+
             }, label: {
-              //  Text(OnboardingData. == 2 ? "Get Started" : "")
                 Text("Get Started")
                     .font(.headline)
                     .foregroundColor(.white)
